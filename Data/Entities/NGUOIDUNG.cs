@@ -13,6 +13,7 @@ namespace Data.Entities
         public string DOB { get; set; }
         public string PHONE { get; set; }
         public string EMAIL { get; set; }
+        public string ROLE { get; set; }
         public List<THETHAONGUOIDUNG> THETHAONGUOIDUNGs { get; set; }
         public string USERNAME { get; set; }
         public string PASSWORD { get; set; }
