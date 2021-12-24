@@ -11,8 +11,8 @@ namespace Data.Entities
         public string MESSAGE_BODY { get; set; }
         public List<NGUOIDUNG> NGUOIDUNGs { get; set; }
         public string CREATE_BY { get; set; }
-        public string CREATE_DAY { get; set; }
+        public DateTime CREATE_DAY { get; set; }
         public string MODIFY { get; set; }
-        public string LASTUPDATE { get; set; }
+        public DateTime LASTUPDATE { get; set; }
     }
 }

@@ -13,8 +13,6 @@ namespace Data.Configurations
         {
             builder.ToTable("THETHAONGUOIDUNGs");
             builder.HasKey(x => x.ID);
-            //builder.HasOne(x => x.DMKHACHHANGs).WithMany(x => x.DMBAIVIETs).
-            //builder.HasOne(x => x.DMLOAIBAIVIET).WithMany(x => x.DMBAIVIET)
         }
     }
 }

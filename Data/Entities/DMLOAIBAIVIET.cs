@@ -10,9 +10,9 @@ namespace Data.Entities
         public string TENLOAI { get; set; }
         public string MOTA { get; set; }
         public string CREATE_BY { get; set; }
-        public string CREATE_DAY { get; set; }
+        public DateTime CREATE_DAY { get; set; }
         public string MODIFY { get; set; }
-        public string LASTUPDATE { get; set; }
-        public DMBAIVIET DMBAIVIET { get; set; }
+        public DateTime LASTUPDATE { get; set; }
+        public List<DMBAIVIET> DMBAIVIETs { get; set; }
     }
 }

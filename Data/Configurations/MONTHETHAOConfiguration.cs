@@ -13,8 +13,7 @@ namespace Data.Configurations
         {
             builder.ToTable("MONTHETHAOs");
             builder.HasKey(x => x.ID);
-            //builder.HasOne(x => x.)
-           
+            builder.Property(x => x.SPORT_NAME).HasMaxLength(250);
         }
     }
 }

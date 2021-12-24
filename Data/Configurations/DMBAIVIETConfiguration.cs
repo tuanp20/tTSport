@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;               
 
 namespace Data.Configurations
 {
@@ -13,8 +14,7 @@ namespace Data.Configurations
         {
             builder.ToTable("DMBAIVIETs");
             builder.HasKey(x => x.ID);
-            //builder.HasOne(x => x.DMKHACHHANGs).WithMany(x => x.DMBAIVIETs).
-            //builder.HasOne(x => x.DMLOAIBAIVIET).WithMany(x => x.DMBAIVIET)
+            builder.Property(x => x.TENBAI).HasMaxLength(250);
         }
     }
 }

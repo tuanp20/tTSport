@@ -1,4 +1,5 @@
 ﻿using Data.Entities;
+using Data.Enums;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
@@ -13,8 +14,9 @@ namespace Data.Configurations
         {
             builder.ToTable("NGUOIDUNGs");
             builder.HasKey(x => x.ID);
-            //builder.HasOne(x => x.DMKHACHHANGs).WithMany(x => x.DMBAIVIETs).
-            //builder.HasOne(x => x.DMLOAIBAIVIET).WithMany(x => x.DMBAIVIET)
+            builder.Property(x => x.USERNAME).IsRequired();
+            builder.Property(x => x.PASSWORD).IsRequired();
+            builder.Property(x => x.SEX).HasDefaultValue(Sex.Nam);
         }
     }
 }

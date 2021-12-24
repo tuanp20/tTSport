@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace API.Controllers.Admin
 {
-    public class KhachHangController : Controller
+    public class DmKhachHangController : Controller
     {
         public IActionResult Index()
         {

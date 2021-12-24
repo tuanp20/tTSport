@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Data.Enums;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -9,7 +10,7 @@ namespace Data.Entities
         public string ID { get; set; }
         public string FIRSTNAME { get; set; }
         public string LASTNAME { get; set; }
-        public int SEX { get; set; }
+        public Sex SEX { get; set; }
         public string DOB { get; set; }
         public string PHONE { get; set; }
         public string EMAIL { get; set; }
@@ -18,8 +19,8 @@ namespace Data.Entities
         public string USERNAME { get; set; }
         public string PASSWORD { get; set; }
         public string CREATE_BY { get; set; }
-        public string CREATE_DAY { get; set; }
+        public DateTime CREATE_DAY { get; set; }
         public string MODIFY { get; set; }
-        public string LASTUPDATE { get; set; }
+        public DateTime LASTUPDATE { get; set; }
     }
 }

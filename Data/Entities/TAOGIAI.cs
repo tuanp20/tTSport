@@ -10,11 +10,11 @@ namespace Data.Entities
         public string TENGIAI { get; set; }
         public int SOLUONGGIAI { get; set; }
         public string LOAIGIAI { get; set; }
-        public string THOIGIAN { get; set; }
+        public DateTime THOIGIAN { get; set; }
         public string DIADIEM { get; set; }
         public string CREATE_BY { get; set; }
-        public string CREATE_DAY { get; set; }
+        public DateTime CREATE_DAY { get; set; }
         public string MODIFY { get; set; }
-        public string LASTUPDATE { get; set; }
+        public DateTime LASTUPDATE { get; set; }
     }
 }

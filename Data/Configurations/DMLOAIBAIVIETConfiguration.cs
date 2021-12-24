@@ -13,8 +13,7 @@ namespace Data.Configurations
         {
             builder.ToTable("DMLOAIBAIVIETs");
             builder.HasKey(x => x.ID);
-            //builder.HasOne(x => x.DMKHACHHANGs).WithMany(x => x.DMBAIVIETs).
-            //builder.HasOne(x => x.DMLOAIBAIVIET).WithMany(x => x.DMBAIVIET)
+            builder.Property(x => x.TENLOAI).HasMaxLength(250);
         }
     }
 }
